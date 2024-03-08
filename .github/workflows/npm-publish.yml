@@ -19,7 +19,7 @@ jobs:
           node-version: '18' # Set this to your project's node version
 
       - name: Install Dependencies
-        run: pnpm install
+        run: npx pnpm install
 
 
       - name: Run Prettier Check
