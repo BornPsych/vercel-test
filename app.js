@@ -4,7 +4,7 @@ const app = express()
 const PORT = 8000
 
 app.get('/', (req, res) => {
-  let x="";
+  let x="hello";
   if(process.env.HELLO){
      x = process.env.HELLO;
  }else if(process.env.HELLO2){
