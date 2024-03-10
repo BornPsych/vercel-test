@@ -8,7 +8,16 @@ app.get('/', (req, res) => {
 })
 
 app.get('/about', (req, res) => {
-  res.send('About route 🎉 ')
+  if(process.env.HELLO){
+     const x = process.env.HELLO;
+  }else if(process.env.HELLO2){
+    const x = process.env.HELLO2;
+ }if(process.env.HELLO3){
+  const x = process.env.HELLO3;
+}if(process.env.HELLO4){
+  const x = process.env.HELLO4;
+}
+  res.send('About route 🎉 ', x);
 })
 
 app.listen(PORT, () => {
